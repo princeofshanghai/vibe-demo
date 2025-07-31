@@ -34,12 +34,12 @@ Based on PRD analysis and current codebase assessment:
   - [x] 1.3 Enhance existing product mock data to include descriptions and additional fields needed for editing
   - [x] 1.4 Create utility functions for motion operations (status transitions, validation, etc.)
 
-- [ ] 2.0 Create GTM Motions List Page  
-  - [ ] 2.1 Build Motions page component with Ant Design Table displaying motions with status badges
-  - [ ] 2.2 Implement MotionStatusBadge component with color-coded workflow states
-  - [ ] 2.3 Add "Create Motion" button in header that navigates to new motion detail page
-  - [ ] 2.4 Style page following PCC design patterns (white table on light gray background with shadows)
-  - [ ] 2.5 Make motion rows clickable to navigate to motion detail page
+- [x] 2.0 Create GTM Motions List Page  
+  - [x] 2.1 Build Motions page component with Ant Design Table displaying motions with status badges
+  - [x] 2.2 Implement MotionStatusBadge component with color-coded workflow states
+  - [x] 2.3 Add "Create Motion" button in header that navigates to new motion detail page
+  - [x] 2.4 Style page following PCC design patterns (white table on light gray background with shadows)
+  - [x] 2.5 Make motion rows clickable to navigate to motion detail page
 
 - [ ] 3.0 Build Motion Detail Page with Form Functionality
   - [ ] 3.1 Create MotionDetail page component with form for motion name and activation date

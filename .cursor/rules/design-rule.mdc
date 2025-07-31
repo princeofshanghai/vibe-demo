@@ -1,0 +1,124 @@
+---
+alwaysApply: true
+---
+# Design Rules - PCC Application
+
+## UI Library & Constraints
+
+### Component Library
+- **Primary**: Ant Design only
+- **Restrictions**: No other UI libraries (Material-UI, Chakra, etc.)
+- **Styling**: Use Ant Design's styling system exclusively
+- **CSS Frameworks**: No additional frameworks (no Tailwind, Bootstrap, etc.)
+
+### Component Usage
+- Always prefer Ant Design components over cus tom implementations
+- Use Ant Design's theme system for customizations
+- Follow Ant Design's design language and patterns
+
+## Visual Style & Vibe
+
+### Overall Aesthetic
+- **Vibe**: Minimal/Clean, Modern SaaS
+- **Inspiration**: Vercel, Supabase, Linear, Stripe dashboards
+- **Approach**: Professional yet approachable
+
+### Shadows & Depth
+- **Style**: Soft, subtle shadows
+- **Usage**: Light shadows for cards, tables, and elevated components
+- **Example**: `box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02)`
+
+### Borders
+- **Thickness**: Thin borders (1px)
+- **Approach**: Mixed - use contextually
+- **Colors**: Soft grays (#f0f0f0, #d9d9d9)
+
+### Color Palette
+- **Tone**: Soft, muted colors
+- **Contrast**: Moderate contrast, avoid stark blacks/whites
+- **Background**: Light grays (#f5f5f5) for page backgrounds
+- **Content**: White backgrounds for components/cards
+
+### Theme Support
+- **Mode**: Light mode only
+- **No dark mode** implementation required
+
+### Border Radius
+- **Style**: Moderately rounded (6-8px)
+- **Consistency**: Use Ant Design's borderRadiusLG token
+- **Application**: Cards, buttons, inputs, tables
+
+### Spacing Philosophy
+- **Approach**: Generous whitespace
+- **Breathing room**: Ample padding and margins
+- **Standard**: 24px for major spacing, 16px for component spacing
+
+## Typography
+
+### Font Family
+- **Primary**: System fonts (Ant Design default)
+- **Stack**: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial`
+- **No custom fonts**: Stick with system font stack
+
+### Hierarchy
+- **Page Titles**: 24px, weight 600
+- **Section Headers**: Follow Ant Design's typography scale
+- **Body Text**: Ant Design defaults
+
+### Tone
+- **Style**: Professional, clear, concise
+- **Voice**: Modern SaaS - friendly but authoritative
+
+## Layout Patterns
+
+### Page Structure
+- **Page Background**: Light gray (#f5f5f5)
+- **Content**: Components have white backgrounds with subtle shadows
+- **No card wrappers**: Page titles and content render directly on background
+- **Separation**: Clear visual separation between page elements
+
+### Standard Layout
+- **Sidebar**: White background, left-aligned
+- **Header**: Clean, minimal, no page titles
+- **Content**: Direct rendering on page background
+
+## Interaction & Animation
+
+### Transitions
+- **Hover/Click**: Smooth transitions
+- **Duration**: Follow Ant Design's timing (typically 200-300ms)
+- **Easing**: Standard ease-out curves
+
+### Interactive States
+- **Hover**: Subtle color changes, slight shadow increases
+- **Focus**: Clear focus indicators for accessibility
+- **Active**: Immediate visual feedback
+
+### Component Behavior
+- **Tables**: White background, rounded corners, subtle shadows
+- **Buttons**: Follow Ant Design's interaction patterns
+- **Forms**: Standard Ant Design form styling and validation
+
+## Component Guidelines
+
+### Tables
+- White background with shadow
+- Rounded corners (borderRadiusLG)
+- No pagination unless necessary
+- Clean column headers
+
+### Navigation
+- Light theme menus
+- Clear active states
+- Consistent spacing
+
+### Forms
+- Standard Ant Design form components
+- Proper validation styling
+- Generous spacing between fields
+
+## Accessibility
+- Follow Ant Design's accessibility guidelines
+- Ensure proper focus indicators
+- Maintain adequate color contrast
+- Use semantic HTML structure

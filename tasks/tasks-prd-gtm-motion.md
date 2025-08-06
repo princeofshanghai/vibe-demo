@@ -61,5 +61,5 @@ Based on PRD analysis and current codebase assessment:
   - [x] 5.1 Add GTM Motions menu item to sidebar navigation with appropriate icon
   - [x] 5.2 Set up React Router routes for `/motions` and `/motions/:id` pages
   - [x] 5.3 Update App.tsx routing configuration to include new motion routes
-  - [ ] 5.4 Implement breadcrumb navigation between motions and products where appropriate
+  - [x] 5.4 Implement breadcrumb navigation between motions and products where appropriate
   - [ ] 5.5 Ensure proper navigation flow from motion creation button vs product page creation

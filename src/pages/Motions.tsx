@@ -1,6 +1,6 @@
 import React from 'react';
-import { Table, Button } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
+import { Table, Button, Breadcrumb } from 'antd';
+import { PlusOutlined, HomeOutlined, AppstoreOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 import type { ColumnsType } from 'antd/es/table';
 import { Motion } from '../types/motion';
@@ -53,6 +53,31 @@ const Motions: React.FC = () => {
 
   return (
     <div style={{ background: 'transparent' }}>
+      {/* Breadcrumb Navigation */}
+      <Breadcrumb
+        style={{ marginBottom: 16 }}
+        items={[
+          {
+            href: '/',
+            title: <HomeOutlined />
+          },
+          {
+            title: (
+              <>
+                <AppstoreOutlined />
+                <span>GTM Motions</span>
+              </>
+            )
+          }
+        ]}
+        onClick={(e, route) => {
+          e.preventDefault();
+          if (route?.href) {
+            navigate(route.href);
+          }
+        }}
+      />
+
       <div style={{ 
         display: 'flex', 
         justifyContent: 'space-between', 

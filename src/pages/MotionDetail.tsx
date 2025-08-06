@@ -44,6 +44,12 @@ const MotionDetail: React.FC = () => {
   const handleSave = (updatedMotion: Motion) => {
     setMotion(updatedMotion);
     setIsEditing(false);
+    
+    // If this is a new motion, navigate to the specific motion URL
+    if (id === 'new' && updatedMotion.id) {
+      navigate(`/motions/${updatedMotion.id}`, { replace: true });
+    }
+    
     // In a real app, this would make an API call
     console.log('Motion saved:', updatedMotion);
   };
@@ -106,6 +112,12 @@ const MotionDetail: React.FC = () => {
             title: isNewMotion ? 'New Motion' : motion.name || 'Motion Detail'
           }
         ]}
+        onClick={(e, route) => {
+          e.preventDefault();
+          if (route?.href) {
+            navigate(route.href);
+          }
+        }}
       />
 
       {/* Header */}

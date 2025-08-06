@@ -1,5 +1,7 @@
 import React from 'react';
-import { Table, Tag } from 'antd';
+import { Table, Tag, Breadcrumb } from 'antd';
+import { HomeOutlined, ProductOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 import type { ColumnsType } from 'antd/es/table';
 
 interface Product {
@@ -51,8 +53,35 @@ const columns: ColumnsType<Product> = [
 ];
 
 const Products: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div style={{ background: 'transparent' }}>
+      {/* Breadcrumb Navigation */}
+      <Breadcrumb
+        style={{ marginBottom: 16 }}
+        items={[
+          {
+            href: '/',
+            title: <HomeOutlined />
+          },
+          {
+            title: (
+              <>
+                <ProductOutlined />
+                <span>Products</span>
+              </>
+            )
+          }
+        ]}
+        onClick={(e, route) => {
+          e.preventDefault();
+          if (route?.href) {
+            navigate(route.href);
+          }
+        }}
+      />
+
       <h2 style={{ 
         marginBottom: 24, 
         fontSize: '24px', 

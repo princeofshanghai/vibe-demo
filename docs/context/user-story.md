@@ -9,7 +9,6 @@ Tiffany opens the **Product Configuration Center (PCC)** and starts a new **Go-t
 <!-- Needs + Flow -->
 Once she’s ready, she submits the motion.
 
-<!-- Concept continued -->
 The system pushes the changes to **EI**, and automatically identifies and routes the required approvals to the right stakeholders in legal, tax, and finance. Tiffany can track who still needs to approve and follow the status in real time.
 
 <!-- Goals -->

@@ -42,9 +42,9 @@ Based on PRD analysis and current codebase assessment:
   - [x] 2.5 Make motion rows clickable to navigate to motion detail page
 
 - [ ] 3.0 Build Motion Detail Page with Form Functionality
-  - [ ] 3.1 Create MotionDetail page component with form for motion name and activation date
-  - [ ] 3.2 Build MotionForm component using Ant Design Form with validation
-  - [ ] 3.3 Implement ProductChangesList component to display current product changes in motion
+  - [x] 3.1 Create MotionDetail page component with form for motion name and activation date
+  - [x] 3.2 Build MotionForm component using Ant Design Form with validation
+  - [x] 3.3 Implement ProductChangesList component to display current product changes in motion
   - [ ] 3.4 Add motion status tracking and workflow progression indicators
   - [ ] 3.5 Include Submit Motion button that progresses status from Draft to Submitted
   - [ ] 3.6 Handle both new motion creation and existing motion editing in same component
@@ -58,8 +58,8 @@ Based on PRD analysis and current codebase assessment:
   - [ ] 4.6 Create product change tracking that shows before/after values in motion detail
 
 - [ ] 5.0 Add Navigation and Routing Integration
-  - [ ] 5.1 Add GTM Motions menu item to sidebar navigation with appropriate icon
-  - [ ] 5.2 Set up React Router routes for `/motions` and `/motions/:id` pages
-  - [ ] 5.3 Update App.tsx routing configuration to include new motion routes
+  - [x] 5.1 Add GTM Motions menu item to sidebar navigation with appropriate icon
+  - [x] 5.2 Set up React Router routes for `/motions` and `/motions/:id` pages
+  - [x] 5.3 Update App.tsx routing configuration to include new motion routes
   - [ ] 5.4 Implement breadcrumb navigation between motions and products where appropriate
   - [ ] 5.5 Ensure proper navigation flow from motion creation button vs product page creation

@@ -1,8 +1,10 @@
 import React from 'react';
 import { Layout, Menu, theme } from 'antd';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { ProductOutlined } from '@ant-design/icons';
+import { ProductOutlined, RocketOutlined } from '@ant-design/icons';
 import Products from './pages/Products';
+import Motions from './pages/Motions';
+import MotionDetail from './pages/MotionDetail';
 import './App.css';
 
 const { Header, Sider, Content } = Layout;
@@ -53,6 +55,11 @@ const App: React.FC = () => {
                 icon: <ProductOutlined />,
                 label: <Link to="/products" style={{ textDecoration: 'none' }}>Products</Link>,
               },
+              {
+                key: '2',
+                icon: <RocketOutlined />,
+                label: <Link to="/motions" style={{ textDecoration: 'none' }}>GTM Motions</Link>,
+              },
             ]}
           />
         </Sider>
@@ -79,6 +86,8 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<Products />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/motions" element={<Motions />} />
+              <Route path="/motions/:id" element={<MotionDetail />} />
             </Routes>
           </Content>
         </Layout>

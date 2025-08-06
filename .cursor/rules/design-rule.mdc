@@ -122,3 +122,7 @@ alwaysApply: true
 - Ensure proper focus indicators
 - Maintain adequate color contrast
 - Use semantic HTML structure
+
+## Confirmation that you've used the rule
+
+When you read this rule, in your responses, say that you read it and reference this file. You can say "Read @design-rules.mdc"
